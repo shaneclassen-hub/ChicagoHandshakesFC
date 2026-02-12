@@ -1,0 +1,32 @@
+[
+  {
+    "number": 1,
+    "name": "Alex Keeper",
+    "position": "GK",
+    "email": "alex@example.com"
+  },
+  {
+    "number": 5,
+    "name": "Jamie Centerback",
+    "position": "DF",
+    "email": "jamie@example.com"
+  },
+  {
+    "number": 8,
+    "name": "Taylor Box-to-Box",
+    "position": "MF",
+    "email": "taylor@example.com"
+  },
+  {
+    "number": 10,
+    "name": "Riley Playmaker",
+    "position": "MF",
+    "email": "riley@example.com"
+  },
+  {
+    "number": 9,
+    "name": "Sam Striker",
+    "position": "FW",
+    "email": "sam@example.com"
+  }
+]

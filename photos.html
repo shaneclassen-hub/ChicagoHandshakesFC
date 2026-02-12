@@ -1,0 +1,48 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Photos • Shane's Rec Soccer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="brand">
+      <div class="brand-logo">SC</div>
+      <h1>Shane's Rec Soccer</h1>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="roster.html">Roster</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+  <section class="hero"><div class="hero-inner"><h2>Team Photos</h2><p>Drop images into the <code>photos/</code> folder to show them here.</p></div></section>
+  <main class="container">
+    <div class="card">
+      <div class="gallery" id="gallery"></div>
+      <p class="notice">Add JPG or PNG images to the <code>photos/</code> folder. Thumbnails will appear automatically.</p>
+    </div>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <p>© 2026 Shane's Rec Soccer • Built with \uD83D\uDC9A by M365 Copilot</p>
+  </div>
+</footer>
+  <script>
+    fetch('data/photos.json').then(r=>r.json()).then(list => {
+      const g = document.getElementById('gallery');
+      g.innerHTML = list.map(src => `<img src="${src}" alt="Team photo">`).join('');
+    }).catch(()=>{
+      const g = document.getElementById('gallery');
+      g.innerHTML = '<p>No photos yet.</p>';
+    });
+  </script>
+</body>
+</html>

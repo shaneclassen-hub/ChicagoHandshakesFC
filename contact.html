@@ -1,0 +1,44 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact • Shane's Rec Soccer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="brand">
+      <div class="brand-logo">SC</div>
+      <h1>Shane's Rec Soccer</h1>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="roster.html">Roster</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+  <section class="hero"><div class="hero-inner"><h2>Contact Us</h2><p>Send a message to the manager or coach.</p></div></section>
+  <main class="container">
+    <div class="card">
+      <form action="https://formspree.io/f/your-id" method="POST"> 
+        <label>Name<input name="name" required></label>
+        <label>Email<input name="email" type="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="button" type="submit">Send</button>
+      </form>
+      <p class="notice">Replace the <code>action</code> with your Formspree or Netlify Forms endpoint to receive submissions.</p>
+    </div>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <p>© 2026 Shane's Rec Soccer • Built with \uD83D\uDC9A by M365 Copilot</p>
+  </div>
+</footer>
+</body>
+</html>
