@@ -1,0 +1,88 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stats • Chicago Handshakes FC</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+<header>
+  <nav class="navbar">
+    <div class="brand">
+      <img class="brand-logo" src="assets/logo.svg" alt="Chicago Handshakes FC logo"/>
+      <h1>Chicago Handshakes FC</h1>
+    </div>
+    <div class="navlinks">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="roster.html">Roster</a>
+      <a href="stats.html">Stats</a>
+      <a href="photos.html">Photos</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <h2>Player Stats</h2>
+      <p>Per-season stats. Update from your phone after each match.</p>
+      <span class="tag">Tip: Works offline with localStorage. Add an endpoint later for sync.</span>
+    </div>
+  </section>
+  <main class="container">
+    <div class="card" style="margin-bottom:1rem">
+      <div class="controls">
+        <label>Season
+          <select id="seasonSelect"></select>
+        </label>
+        <button class="button" id="addSeasonBtn">+ New Season</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Enter Game Stats</h3>
+        <form id="statForm">
+          <label>Date <input type="date" id="gdate" required></label>
+          <label>Opponent <input id="opponent" placeholder="e.g., River North FC" required></label>
+          <label>Player <input id="player" placeholder="Name" required></label>
+          <div class="controls">
+            <label>Goals <input type="number" id="goals" value="0" min="0"></label>
+            <label>Assists <input type="number" id="assists" value="0" min="0"></label>
+            <label>Minutes <input type="number" id="mins" value="0" min="0"></label>
+          </div>
+          <div class="controls">
+            <label>Clean Sheet <select id="cs"><option value="0">No</option><option value="1">Yes</option></select></label>
+            <label>Yellow Cards <input type="number" id="yc" value="0" min="0"></label>
+            <label>Red Cards <input type="number" id="rc" value="0" min="0"></label>
+          </div>
+          <label>Notes <textarea id="notes" rows="3"></textarea></label>
+          <button class="button" type="submit">Save Entry</button>
+        </form>
+        <p class="notice" style="margin-top:.75rem">By default this saves to your phone/browser. You can connect a Google Sheet or Netlify Function later to sync across devices.</p>
+      </div>
+
+      <div class="card">
+        <h3>Season Leaderboard</h3>
+        <table class="table">
+          <thead><tr><th>Player</th><th>GP</th><th>G</th><th>A</th><th>Pts</th><th>CS</th><th>YC</th><th>RC</th><th>Mins</th></tr></thead>
+          <tbody id="statsBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Chicago Handshakes FC • Est. 2017 • Sponsored by Roscoe Village Pub • Built with 💙❤️ by M365 Copilot</p>
+  </div>
+
+</footer>
+
+  <script src="stats.js"></script>
+</body>
+</html>

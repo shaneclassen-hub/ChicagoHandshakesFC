@@ -4,29 +4,32 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Roster • Shane's Rec Soccer</title>
+  <title>Roster • Chicago Handshakes FC</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
+  
+<header>
   <nav class="navbar">
     <div class="brand">
-      <div class="brand-logo">SC</div>
-      <h1>Shane's Rec Soccer</h1>
+      <img class="brand-logo" src="assets/logo.svg" alt="Chicago Handshakes FC logo"/>
+      <h1>Chicago Handshakes FC</h1>
     </div>
     <div class="navlinks">
       <a href="index.html">Home</a>
       <a href="schedule.html">Schedule</a>
       <a href="roster.html">Roster</a>
+      <a href="stats.html">Stats</a>
       <a href="photos.html">Photos</a>
       <a href="contact.html">Contact</a>
     </div>
   </nav>
 </header>
+
   <section class="hero">
     <div class="hero-inner">
       <h2>Team Roster</h2>
-      <p>Player numbers, positions, and contact emails.</p>
+      <p>Player numbers, positions, and contacts.</p>
     </div>
   </section>
   <main class="container">
@@ -35,21 +38,17 @@
         <thead><tr><th>#</th><th>Name</th><th>Position</th><th>Email</th></tr></thead>
         <tbody id="roster-body"></tbody>
       </table>
-      <p class="notice">Tip: edit <code>data/roster.json</code> to update players.</p>
+      <p class="notice">Edit <code>data/roster.json</code> to update players.</p>
     </div>
   </main>
-  <footer class="footer">
+  
+<footer class="footer">
   <div class="container">
-    <p>© 2026 Shane's Rec Soccer • Built with \uD83D\uDC9A by M365 Copilot</p>
+    <p>© 2026 Chicago Handshakes FC • Est. 2017 • Sponsored by Roscoe Village Pub • Built with 💙❤️ by M365 Copilot</p>
   </div>
+
 </footer>
-  <script>
-    fetch('data/roster.json').then(r=>r.json()).then(rows => {
-      const body = document.getElementById('roster-body');
-      body.innerHTML = rows.map(p => `
-        <tr><td>${p.number}</td><td>${p.name}</td><td>${p.position}</td><td><a href="mailto:${p.email}">${p.email}</a></td></tr>
-      `).join('');
-    }).catch(()=>{});
-  </script>
+
+  <script src="roster.js"></script>
 </body>
 </html>

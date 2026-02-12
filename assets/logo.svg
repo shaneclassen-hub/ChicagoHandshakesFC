@@ -1,0 +1,19 @@
+
+<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'>
+  <rect x='56' y='56' width='400' height='400' rx='32' ry='32' fill='white' stroke='#4DB3E6' stroke-width='10'/>
+  <rect x='76' y='160' width='360' height='32' fill='#4DB3E6'/>
+  <rect x='76' y='320' width='360' height='32' fill='#4DB3E6'/>
+  <g fill='#D82027'>
+    <path d='M136 240 l14 -30 14 30 30 14 -30 14 -14 30 -14 -30 -30 -14z'/>
+    <path d='M216 240 l14 -30 14 30 30 14 -30 14 -14 30 -14 -30 -30 -14z'/>
+    <path d='M296 240 l14 -30 14 30 30 14 -30 14 -14 30 -14 -30 -30 -14z'/>
+    <path d='M376 240 l14 -30 14 30 30 14 -30 14 -14 30 -14 -30 -30 -14z'/>
+  </g>
+  <circle cx='256' cy='256' r='46' fill='none' stroke='#0d1b2a' stroke-width='6'/>
+  <path d='M256 210 l20 20 -20 20 -20 -20z' fill='#0d1b2a'/>
+  <g style='font-family: Segoe UI, Arial; font-weight: 800; fill:#0d1b2a;'>
+    <text x='256' y='120' text-anchor='middle' font-size='26'>CHICAGO HANDSHAKES</text>
+    <text x='256' y='150' text-anchor='middle' font-size='16'>FOOTBALL CLUB</text>
+    <text x='256' y='380' text-anchor='middle' font-size='14'>EST. 2017 • ROSCOE VILLAGE PUB</text>
+  </g>
+</svg>

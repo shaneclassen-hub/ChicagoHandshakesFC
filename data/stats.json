@@ -1,0 +1,22 @@
+{
+  "seasons": [
+    {
+      "season": "Spring 2026",
+      "players": [
+        {
+          "name": "Player One",
+          "number": 10,
+          "pos": "MF",
+          "gp": 0,
+          "g": 0,
+          "a": 0,
+          "pts": 0,
+          "cs": 0,
+          "yc": 0,
+          "rc": 0,
+          "mins": 0
+        }
+      ]
+    }
+  ]
+}
